@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Rscripts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Code</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rscripts.each do |rscript| %>
+      <tr>
+        <td><%= rscript.title %></td>
+        <td><%= rscript.code %></td>
+        <td><%= link_to 'Show', rscript %></td>
+        <td><%= link_to 'Edit', edit_rscript_path(rscript) %></td>
+        <td><%= link_to 'Destroy', rscript, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rscript', new_rscript_path %>

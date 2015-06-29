@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @rscript.title %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @rscript.code %>
+</p>
+
+
+<%= link_to 'Edit', edit_rscript_path(@rscript) %> |
+<%= link_to 'Back', rscripts_path %>
+
+<div id="rmarkdown_target"></div>
+<script>
+	$( document ).ready(function() {		
+		$("#rmarkdown_target").html('<iframe src="<%=@mark.location + 'files/output.html'%>" style="top: 0px; right: 0px; width: 800px; height: 1200px;  border: 0;  margin: 0;  z-index: 999999;"></iframe>');
+	});						
+</script>
+

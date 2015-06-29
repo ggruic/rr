@@ -1,0 +1,781 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-29 11:26:25 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 3300ms (Views: 3269.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 11:26:29 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-29 11:26:29 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-29 11:26:29 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-29 11:26:29 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 11:26:29 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-29 11:26:29 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-29 11:26:29 +0200
+
+
+Started GET "/rscripts" for 127.0.0.1 at 2015-06-29 12:13:41 +0200
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/ruby/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/ruby/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/ruby/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (106.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (49.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (126.0ms)
+  [1m[36m (80.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (57.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateRscripts (20150629101249)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "rscripts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "code" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150629101249"]]
+  [1m[35m (67.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/rscripts" for 127.0.0.1 at 2015-06-29 12:14:09 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RscriptsController#index as HTML
+  [1m[35mRscript Load (0.0ms)[0m  SELECT "rscripts".* FROM "rscripts"
+  Rendered rscripts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1438ms (Views: 1435.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-47f6b931bc47db81774b54335784fbabd44797c551a82ce0549df828b9fc3f62.css?body=1" for 127.0.0.1 at 2015-06-29 12:14:10 +0200
+
+
+Started GET "/assets/rscripts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 12:14:10 +0200
+
+
+Started GET "/assets/rscripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 12:14:10 +0200
+
+
+Started GET "/rscripts/new" for 127.0.0.1 at 2015-06-29 12:14:20 +0200
+Processing by RscriptsController#new as HTML
+  Rendered rscripts/_form.html.erb (197.0ms)
+  Rendered rscripts/new.html.erb within layouts/application (200.0ms)
+Completed 200 OK in 289ms (Views: 280.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-29 12:16:08 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 133ms (Views: 132.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rscripts" for 127.0.0.1 at 2015-06-29 12:16:10 +0200
+Processing by RscriptsController#index as HTML
+  [1m[36mRscript Load (0.0ms)[0m  [1mSELECT "rscripts".* FROM "rscripts"[0m
+  Rendered rscripts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rscripts" for 127.0.0.1 at 2015-06-29 12:16:15 +0200
+Processing by RscriptsController#index as HTML
+  [1m[35mRscript Load (0.0ms)[0m  SELECT "rscripts".* FROM "rscripts"
+  Rendered rscripts/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rscripts" for 127.0.0.1 at 2015-06-29 12:17:18 +0200
+Processing by RscriptsController#index as HTML
+  [1m[36mRscript Load (0.0ms)[0m  [1mSELECT "rscripts".* FROM "rscripts"[0m
+  Rendered rscripts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 128ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rscripts/new" for 127.0.0.1 at 2015-06-29 12:18:34 +0200
+Processing by RscriptsController#new as HTML
+  Rendered rscripts/_form.html.erb (3.0ms)
+  Rendered rscripts/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 82ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rscripts" for 127.0.0.1 at 2015-06-29 12:21:08 +0200
+Processing by RscriptsController#create as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"VEgNfSc6T07iQxHEswNnlBSc7lwYGKn5A8ea4VnLhDPuoLO43BZre2oEJ9Jzu0A4UNu0Ztzj2q9I4//1/gd6Rg==", "rscript"=>{"title"=>"Example script", "code"=>"Example rmarkdown Document\r\n==================================\r\n\r\nHere is some text.\r\n\r\nHere is some code\r\n```{r}\r\nset.seed(1)\r\nx <- rnorm(100)\r\nmean(x)\r\n```"}, "commit"=>"Create Rscript"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (8.0ms)[0m  [1mINSERT INTO "rscripts" ("title", "code", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Example script"], ["code", "Example rmarkdown Document\r\n==================================\r\n\r\nHere is some text.\r\n\r\nHere is some code\r\n```{r}\r\nset.seed(1)\r\nx <- rnorm(100)\r\nmean(x)\r\n```"], ["created_at", "2015-06-29 10:21:08.853481"], ["updated_at", "2015-06-29 10:21:08.853481"]]
+  [1m[35m (128.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/rscripts/1
+Completed 302 Found in 151ms (ActiveRecord: 136.0ms)
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 12:21:09 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRscript Load (1.0ms)[0m  [1mSELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 129ms (Views: 79.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/rscripts/1/edit" for 127.0.0.1 at 2015-06-29 12:21:13 +0200
+Processing by RscriptsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRscript Load (0.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered rscripts/_form.html.erb (2.0ms)
+  Rendered rscripts/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 95ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 12:21:36 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRscript Load (0.0ms)[0m  [1mSELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 12:46:28 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRscript Load (0.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `location' for nil:NilClass):
+    17: <div id="rmarkdown_target"></div>
+    18: <script>
+    19: 	$( document ).ready(function() {		
+    20: 		$("#rmarkdown_target").html('<iframe src="<%=@mark.location + 'files/output.html'%>" style="top: 0px; right: 0px; width: 800px; height: 1200px;  border: 0;  margin: 0;  z-index: 999999;"></iframe>');
+    21: 	});						
+    22: </script>
+  app/views/rscripts/show.html.erb:20:in `_app_views_rscripts_show_html_erb__603942903_40912632'
+
+
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (48.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (111.0ms)
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 12:48:02 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRscript Load (0.0ms)[0m  [1mSELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `location' for nil:NilClass):
+    17: <div id="rmarkdown_target"></div>
+    18: <script>
+    19: 	$( document ).ready(function() {		
+    20: 		$("#rmarkdown_target").html('<iframe src="<%=@mark.location + 'files/output.html'%>" style="top: 0px; right: 0px; width: 800px; height: 1200px;  border: 0;  margin: 0;  z-index: 999999;"></iframe>');
+    21: 	});						
+    22: </script>
+  app/views/rscripts/show.html.erb:20:in `_app_views_rscripts_show_html_erb__603942903_40912632'
+
+
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (48.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (49.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (154.0ms)
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 12:49:27 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRscript Load (1.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 1624ms (ActiveRecord: 1.0ms)
+
+NoMethodError (undefined method `rcode' for #<Rscript:0x4c79538>):
+  app/controllers/rscripts_controller.rb:23:in `show'
+
+
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (47.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (109.0ms)
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 12:49:54 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRscript Load (0.0ms)[0m  [1mSELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4411ms (Views: 549.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 12:49:58 +0200
+
+
+Started GET "/assets/scaffolds.self-47f6b931bc47db81774b54335784fbabd44797c551a82ce0549df828b9fc3f62.css?body=1" for 127.0.0.1 at 2015-06-29 12:49:58 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-29 12:49:58 +0200
+
+
+Started GET "/assets/rscripts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 12:49:58 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-29 12:49:58 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-29 12:49:59 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 12:49:59 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-29 12:49:59 +0200
+
+
+Started GET "/assets/rscripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 12:49:59 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-29 12:49:59 +0200
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 13:03:06 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRscript Load (0.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4125ms (Views: 129.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-47f6b931bc47db81774b54335784fbabd44797c551a82ce0549df828b9fc3f62.css?body=1" for 127.0.0.1 at 2015-06-29 13:03:11 +0200
+
+
+Started GET "/assets/rscripts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:03:11 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:03:11 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:11 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-29 13:03:11 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:11 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:11 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:11 +0200
+
+
+Started GET "/assets/rscripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:11 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:11 +0200
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 13:03:28 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRscript Load (0.0ms)[0m  [1mSELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3975ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:03:32 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:32 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-29 13:03:32 +0200
+
+
+Started GET "/assets/rscripts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:03:32 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:32 +0200
+
+
+Started GET "/assets/scaffolds.self-47f6b931bc47db81774b54335784fbabd44797c551a82ce0549df828b9fc3f62.css?body=1" for 127.0.0.1 at 2015-06-29 13:03:32 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:32 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:32 +0200
+
+
+Started GET "/assets/rscripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:32 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:32 +0200
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 13:03:34 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRscript Load (0.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3944ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:03:38 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-29 13:03:38 +0200
+
+
+Started GET "/assets/scaffolds.self-47f6b931bc47db81774b54335784fbabd44797c551a82ce0549df828b9fc3f62.css?body=1" for 127.0.0.1 at 2015-06-29 13:03:38 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:38 +0200
+
+
+Started GET "/assets/rscripts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:03:38 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:38 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:38 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:38 +0200
+
+
+Started GET "/assets/rscripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:38 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-29 13:03:38 +0200
+
+
+Started GET "/rscripts/1/edit" for 127.0.0.1 at 2015-06-29 13:03:49 +0200
+Processing by RscriptsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRscript Load (0.0ms)[0m  [1mSELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered rscripts/_form.html.erb (78.0ms)
+  Rendered rscripts/edit.html.erb within layouts/application (93.6ms)
+Completed 200 OK in 166ms (Views: 166.2ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/rscripts/1" for 127.0.0.1 at 2015-06-29 13:03:51 +0200
+Processing by RscriptsController#update as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"+CWnuxsuaY9xQ2XjxOskGTmVCB5y3RhiGArshRr0SC9CzRl+4AJNuvkEU/UEUwO1fdJSJLYmazRTLomRvTi2Wg==", "rscript"=>{"title"=>"Example script", "code"=>"Example rmarkdown Document\r\n==================================\r\n\r\nHere is some text.\r\n\r\nHere is some code\r\n```{r}\r\nset.seed(1)\r\nx <- rnorm(100)\r\nmean(x)\r\n```"}, "commit"=>"Update Rscript", "id"=>"1"}
+  [1m[35mRscript Load (0.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/rscripts/1
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 13:03:51 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRscript Load (0.0ms)[0m  [1mSELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3933ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 13:04:19 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRscript Load (0.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4028ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-29 13:04:23 +0200
+
+
+Started GET "/assets/scaffolds.self-47f6b931bc47db81774b54335784fbabd44797c551a82ce0549df828b9fc3f62.css?body=1" for 127.0.0.1 at 2015-06-29 13:04:23 +0200
+
+
+Started GET "/assets/rscripts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:04:23 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-29 13:04:23 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:04:23 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-29 13:04:23 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:04:23 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-29 13:04:23 +0200
+
+
+Started GET "/assets/rscripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:04:23 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-29 13:04:23 +0200
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 13:05:01 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRscript Load (1.0ms)[0m  [1mSELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3964ms (Views: 77.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.self-47f6b931bc47db81774b54335784fbabd44797c551a82ce0549df828b9fc3f62.css?body=1" for 127.0.0.1 at 2015-06-29 13:05:05 +0200
+
+
+Started GET "/assets/rscripts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:05:05 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-29 13:05:05 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:05:05 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-29 13:05:05 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-29 13:05:05 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-29 13:05:05 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:05:05 +0200
+
+
+Started GET "/assets/rscripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:05:05 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-29 13:05:05 +0200
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 13:05:11 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRscript Load (0.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3992ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rscripts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:05:15 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-29 13:05:15 +0200
+
+
+Started GET "/assets/scaffolds.self-47f6b931bc47db81774b54335784fbabd44797c551a82ce0549df828b9fc3f62.css?body=1" for 127.0.0.1 at 2015-06-29 13:05:15 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-29 13:05:15 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-29 13:05:15 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:05:15 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-29 13:05:15 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:05:15 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-29 13:05:15 +0200
+
+
+Started GET "/assets/rscripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:05:15 +0200
+
+
+Started GET "/rscripts/1/edit" for 127.0.0.1 at 2015-06-29 13:05:29 +0200
+Processing by RscriptsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRscript Load (0.0ms)[0m  [1mSELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered rscripts/_form.html.erb (0.0ms)
+  Rendered rscripts/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 129ms (Views: 129.2ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/rscripts/1" for 127.0.0.1 at 2015-06-29 13:05:36 +0200
+Processing by RscriptsController#update as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"37QAwn7LpeSUjgfLgVNl9onrbxczub/7Wr1BPMz2eadlXL4HheeB0RzJMd1B60Jazaw1LfdCzK0RmSQoazqH0g==", "rscript"=>{"title"=>"Example script", "code"=>"Example rmarkdown Document\r\n==================================\r\n\r\nHere is some text.\r\n\r\nHere is some code.\r\n```{r}\r\nset.seed(1)\r\nx <- rnorm(100)\r\nmean(x)\r\n```"}, "commit"=>"Update Rscript", "id"=>"1"}
+  [1m[35mRscript Load (0.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  UPDATE "rscripts" SET "code" = ?, "updated_at" = ? WHERE "rscripts"."id" = ?  [["code", "Example rmarkdown Document\r\n==================================\r\n\r\nHere is some text.\r\n\r\nHere is some code.\r\n```{r}\r\nset.seed(1)\r\nx <- rnorm(100)\r\nmean(x)\r\n```"], ["updated_at", "2015-06-29 11:05:36.803224"], ["id", 1]]
+  [1m[36m (98.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/rscripts/1
+Completed 302 Found in 109ms (ActiveRecord: 101.0ms)
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 13:05:36 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRscript Load (1.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4005ms (Views: 78.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 13:06:47 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRscript Load (0.0ms)[0m  [1mSELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2468ms (Views: 126.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-29 13:06:50 +0200
+
+
+Started GET "/assets/rscripts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:06:50 +0200
+
+
+Started GET "/assets/scaffolds.self-47f6b931bc47db81774b54335784fbabd44797c551a82ce0549df828b9fc3f62.css?body=1" for 127.0.0.1 at 2015-06-29 13:06:50 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-29 13:06:50 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-29 13:06:50 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:06:50 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-29 13:06:50 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:06:50 +0200
+
+
+Started GET "/assets/rscripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:06:50 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-29 13:06:50 +0200
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 13:06:55 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRscript Load (0.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2417ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rscripts/1" for 127.0.0.1 at 2015-06-29 13:07:02 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRscript Load (0.0ms)[0m  [1mSELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered rscripts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2524ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:07:05 +0200
+
+
+Started GET "/assets/rscripts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-29 13:07:05 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-29 13:07:05 +0200
+
+
+Started GET "/assets/scaffolds.self-47f6b931bc47db81774b54335784fbabd44797c551a82ce0549df828b9fc3f62.css?body=1" for 127.0.0.1 at 2015-06-29 13:07:05 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-29 13:07:05 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:07:05 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-29 13:07:05 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-29 13:07:05 +0200
+
+
+Started GET "/assets/rscripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-29 13:07:05 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-29 13:07:05 +0200
+
+
+Started GET "/rscripts" for 127.0.0.1 at 2015-06-29 13:08:36 +0200
+Processing by RscriptsController#index as HTML
+  [1m[35mRscript Load (0.0ms)[0m  SELECT "rscripts".* FROM "rscripts"
+  Rendered rscripts/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 114ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rscripts/new" for 127.0.0.1 at 2015-06-29 13:08:38 +0200
+Processing by RscriptsController#new as HTML
+  Rendered rscripts/_form.html.erb (0.0ms)
+  Rendered rscripts/new.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 98ms (Views: 97.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rscripts" for 127.0.0.1 at 2015-06-29 13:08:42 +0200
+Processing by RscriptsController#create as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"+Tf4NDYkf4J/2K12av5n/ro8CA7ExADyMGYa7lwwiQJD30bxzQhbt/efm2CqRkBS/ntSNAA/c6R7Qn/6+/x3dw==", "rscript"=>{"title"=>"aa", "code"=>"Example rmarkdown Document\r\n==================================\r\n\r\nHere is some text.\r\n\r\nHere is some code.\r\n```{r}\r\nset.seed(1)\r\nx <- rnorm(100)\r\nmean(x)\r\n```"}, "commit"=>"Create Rscript"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "rscripts" ("title", "code", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "aa"], ["code", "Example rmarkdown Document\r\n==================================\r\n\r\nHere is some text.\r\n\r\nHere is some code.\r\n```{r}\r\nset.seed(1)\r\nx <- rnorm(100)\r\nmean(x)\r\n```"], ["created_at", "2015-06-29 11:08:42.232024"], ["updated_at", "2015-06-29 11:08:42.232024"]]
+  [1m[36m (196.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/rscripts/2
+Completed 302 Found in 209ms (ActiveRecord: 198.0ms)
+
+
+Started GET "/rscripts/2" for 127.0.0.1 at 2015-06-29 13:08:42 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRscript Load (0.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered rscripts/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2431ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rscripts/2" for 127.0.0.1 at 2015-06-29 13:08:57 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRscript Load (0.0ms)[0m  [1mSELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 1001ms (ActiveRecord: 0.0ms)
+
+Errno::ECONNREFUSED (Nije moguæe uspostaviti vezu jer je odredišno raèunalo aktivno odbilo. - connect(2)):
+  app/controllers/rscripts_controller.rb:14:in `show'
+
+
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (47.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (105.0ms)
+
+
+Started GET "/rscripts/2" for 127.0.0.1 at 2015-06-29 13:09:56 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRscript Load (0.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered rscripts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2406ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rscripts/2/edit" for 127.0.0.1 at 2015-06-29 13:11:59 +0200
+Processing by RscriptsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRscript Load (0.0ms)[0m  [1mSELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered rscripts/_form.html.erb (0.0ms)
+  Rendered rscripts/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 84ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/rscripts/2" for 127.0.0.1 at 2015-06-29 13:12:31 +0200
+Processing by RscriptsController#update as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"X+uMlJFDAFPiezOSquZ5klOyGtUcVZPB3FVwlSr0kgLlAzJRam8kZmo8BYRqXl4+F/VA79iu4JeXcRWBjThsdw==", "rscript"=>{"title"=>"network D3 example", "code"=>"networkD3 example (simpleNetwork)\r\n==================================\r\n\r\n```{r block1}\r\nlibrary(\"networkD3\")\r\nsrc <- c(\"A\", \"A\", \"A\", \"A\", \"B\", \"B\", \"C\", \"C\", \"D\")\r\ntarget <- c(\"B\", \"C\", \"D\", \"J\", \"E\", \"F\", \"G\", \"H\", \"I\")\r\nnetworkData <- data.frame(src, target)\r\nsimpleNetwork(networkData) \r\n```"}, "commit"=>"Update Rscript", "id"=>"2"}
+  [1m[35mRscript Load (0.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "rscripts" SET "title" = ?, "code" = ?, "updated_at" = ? WHERE "rscripts"."id" = ?  [["title", "network D3 example"], ["code", "networkD3 example (simpleNetwork)\r\n==================================\r\n\r\n```{r block1}\r\nlibrary(\"networkD3\")\r\nsrc <- c(\"A\", \"A\", \"A\", \"A\", \"B\", \"B\", \"C\", \"C\", \"D\")\r\ntarget <- c(\"B\", \"C\", \"D\", \"J\", \"E\", \"F\", \"G\", \"H\", \"I\")\r\nnetworkData <- data.frame(src, target)\r\nsimpleNetwork(networkData) \r\n```"], ["updated_at", "2015-06-29 11:12:31.494424"], ["id", 2]]
+  [1m[36m (159.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/rscripts/2
+Completed 302 Found in 170ms (ActiveRecord: 160.0ms)
+
+
+Started GET "/rscripts/2" for 127.0.0.1 at 2015-06-29 13:12:31 +0200
+Processing by RscriptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRscript Load (1.0ms)[0m  SELECT  "rscripts".* FROM "rscripts" WHERE "rscripts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered rscripts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3023ms (Views: 124.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/rscripts" for 127.0.0.1 at 2015-06-29 13:19:23 +0200
+Processing by RscriptsController#index as HTML
+  [1m[36mRscript Load (1.0ms)[0m  [1mSELECT "rscripts".* FROM "rscripts"[0m
+  Rendered rscripts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 136ms (Views: 134.0ms | ActiveRecord: 1.0ms)

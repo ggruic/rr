@@ -1,0 +1,25 @@
+<%= form_for(@rscript) do |f| %>
+  <% if @rscript.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rscript.errors.count, "error") %> prohibited this rscript from being saved:</h2>
+
+      <ul>
+      <% @rscript.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_area :code %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
